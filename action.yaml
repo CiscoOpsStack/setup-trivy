@@ -53,7 +53,7 @@ runs:
 
     - name: Checkout install script
       if: steps.cache.outputs.cache-hit != 'true'
-      uses: CiscoOpsStack/checkout@v4
+      uses: CiscoOpsStack/checkout@v4.2.0
       with:
         repository: aquasecurity/trivy
         sparse-checkout: |
